@@ -33,7 +33,7 @@ We essentially performed 2 different runs with our data:
 
 **Ames_Final_Feature_DF** -- Script to create final Train DF with manually-tested feature list. Associated with Run 1
 
-**Ames_TestSet1_Processing_Submission** Processing/cleaning of test.csv and applying the stacked (linear/gboost/random forest) model to the test data, using the feature list computed in Run 1
+**Ames_TestSet1_Processing_Run1_XGB_Submission** Processing/cleaning of test.csv and applying the stacked (linear/gboost/random forest) model to the test data, using the feature list computed in Run 1
 
 #### Run 2:
 
@@ -46,6 +46,8 @@ We essentially performed 2 different runs with our data:
 **AmesDF_FeatureSelection_AfterManualRemoval** -- Multicollinearity and correlation check of processed data from Run 2, and Feature Engineering for Run 2 using a random feature selection algoritm to minomize AIC.
 
 **Feature_Engineering_Lasso** -- Use of Lasso algorithm to choose optimal lambda values and engineer exlusion list of features whose coefficients decrease to 0 after regularization penalty. Features were normalized using min/max standardization to avoid bias
+
+**Feature_Engineering_GradientBoost** -- Use of GradientBoostingRegressor to detemine a relevant candidate feature list using the feature_importances_ method
 
 ### Modeling and hyperparameter optimization:
 
@@ -60,6 +62,8 @@ We essentially performed 2 different runs with our data:
 **Modeling_Elasticnet** -- Choosing optimal alpha and rho hyperparameters for balancing Ridge/Lasso regularization algorithms using train/test modeling
 
 ### Model stacking and train/test comparison:
+
+**Stacking_FinalFeatures_Run1_WithXGB** -- Stacking model for Run 1, where a 24% XGBoost, 36% Gradient Boost, 20% Random Forest, and 20% linear stacked model was found to be best against the test set 
 
 **Stacking_FinalFeatures_Run2** -- Stacking model for Run 2, which suggested an optimal balance of 40% gradient, 35% random forest, and 25% linear model (0% Ridge)
 
