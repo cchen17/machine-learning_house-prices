@@ -13,7 +13,7 @@ The data was provided as train.csv (with house prices), and test.csv (new observ
 
 We essentially performed 2 different runs with our data:
 
-**Run 1** -- Cleaned/processed train.csv and test.csv separately. Did not perform manually-assessed feature removal or fearutre creation. Obtained feature lists by AIC, Lasso, and GBoost, and manually curated these lists bases on optimal score in train/test modeling.
+**Run 1** -- Cleaned/processed train.csv and test.csv separately. Did not perform manually-assessed feature removal or feature creation. Obtained feature lists by AIC, Lasso, and GBoost, and manually curated these lists bases on optimal score in train/test modeling.
 
 **Test Score (RMSLE): 0.113, Kaggle Score: 0.130**
 
