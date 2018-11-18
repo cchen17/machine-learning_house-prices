@@ -1,3 +1,7 @@
 *.ipnyb_checkpoints
 *.DS_Store
 *.csv
+
+denise/Discard
+denise/Discard/*
+
