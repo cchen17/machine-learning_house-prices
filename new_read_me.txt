@@ -1,3 +1,12 @@
+------------------
+update from Chaoran:
+
+Feature Engineering_Lasso.ipynb  - python code file - use lasso to select features during the Feature Engineering phase
+Modeling_Ridge_ all column standardized.ipynb - python code file - After feature selection , use Ridge regression to predict price, all columns are standardized to 0-1 value to avoid incorrect penalty
+Modeling_Elasticnet.ipynb - python code file - use Elasticnet regression to predict price
+----------------------
+
+
 Dave folder:
 
 ipython Notebooks:
@@ -45,3 +54,4 @@ This is where I did the random-AIC-generating feature selection, after manually 
 
 Ames_Overall_Models_and_Stacking_FinalFeaturesDJC:
 This is the new version of the file where I imported features from the ReducedFeature analysis and checked the stacked model, giving a score of 0.122.
+
