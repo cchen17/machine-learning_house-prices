@@ -43,9 +43,9 @@ We essentially performed 2 different runs with our data:
 
 **AmesDF_Multicollinearity_Feature_Reduction** -- Checking the processed DF for signs of multicollinearity and correlation between features. Also performing AIC feature selection algorithm associated with Run 1.
 
-**AmesDF_FeatureSelection_AfterManualRemoval** -- Multicollinearity and correlation check of processed data from Run 2, and Feature Engineering for Run 2 using a random feature selection algoritm to minimize AIC.
+**AmesDF_FeatureSelection_AfterManualRemoval** -- Multicollinearity and correlation check of processed data from Run 2, and Feature Engineering for Run 2 using a random feature selection algorithm to minimize AIC.
 
-**Feature_Engineering_Lasso** -- Use of Lasso algorithm to choose optimal lambda values and engineer exlusion list of features whose coefficients decrease to 0 after regularization penalty. Features were normalized using min/max standardization to avoid bias
+**Feature_Engineering_Lasso** -- Use of Lasso algorithm to choose optimal lambda values and engineer exclusion list of features whose coefficients decrease to 0 after regularization penalty. Features were normalized using min/max standardization to avoid bias
 
 **Feature_Engineering_GradientBoost** -- Use of GradientBoostingRegressor to detemine a relevant candidate feature list using the feature_importances_ method
 
