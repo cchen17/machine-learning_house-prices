@@ -68,9 +68,6 @@ We essentially performed 2 different runs with our data:
 **Stacking_FinalFeatures_Run2** -- Stacking model for Run 2, which suggested an optimal balance of 40% gradient, 35% random forest, and 25% linear model (0% Ridge)
 
 
-### Test.csv prediction and Kaggle submission:
-
-
 ### Individal subfolders:
 
 These subfolders contain pre-work or work that was not part of the final process pipeline
